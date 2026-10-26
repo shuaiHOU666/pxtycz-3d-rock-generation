@@ -1,0 +1,21 @@
+# Core (generation / training)
+torch>=2.0
+numpy
+scipy
+pandas
+scikit-learn
+omegaconf
+einops
+tqdm
+transformers          # SciBERT weights are downloaded from the Hugging Face Hub on first use
+
+# Pore-network / morphology descriptors (topology/)
+scikit-image
+porespy
+openpnm
+tifffile
+matplotlib
+seaborn
+
+# Symbolic regression (sisso/)
+TorchSisso            # paper used v0.1.8

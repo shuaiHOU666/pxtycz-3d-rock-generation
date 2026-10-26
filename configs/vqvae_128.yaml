@@ -1,0 +1,21 @@
+# Stage-I VQ-VAE, 128^3 volumes -> 8^3 latent (downsampling factor 16).
+# in/out channels = 2: one-hot (solid, pore).
+model:
+  params:
+    embed_dim: 3
+    n_embed: 8192
+    ddconfig:
+      double_z: False
+      z_channels: 3
+      resolution: 128
+      in_channels: 2
+      out_ch: 2
+      ch: 128
+      ch_mult: [1, 1, 2, 2, 4]
+      num_res_blocks: 1
+      attn_resolutions: []
+      dropout: 0.0
+
+lossconfig:
+  params:
+    codebook_weight: 1.0

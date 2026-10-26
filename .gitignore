@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.idea/
+.ipynb_checkpoints/
+runs/
+samples/
+analysis_out/
+sisso_results/
+*.pth
+*.pt
+*.safetensors
+*.raw
+*.npy
+!data/example/**

@@ -1,0 +1,22 @@
+# Stage-I VQ-VAE, 64^3 volumes -> 16^3 latent (downsampling factor 4).
+# in/out channels = 2: one-hot (solid, pore).
+# Adapted from AutoSDF / LDM configs.
+model:
+  params:
+    embed_dim: 3
+    n_embed: 8192
+    ddconfig:
+      double_z: False
+      z_channels: 3
+      resolution: 64
+      in_channels: 2
+      out_ch: 2
+      ch: 64
+      ch_mult: [1, 2, 4]
+      num_res_blocks: 1
+      attn_resolutions: []
+      dropout: 0.0
+
+lossconfig:
+  params:
+    codebook_weight: 1.0
