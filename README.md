@@ -74,4 +74,4 @@ the training prompts (partial prompts), and targets are taken from the specimens
   messages are in Chinese and input/output paths are set in their `__main__` blocks.
 
 ## Citation / licence
-MIT licence (`LICENSE`), incorporating MOFFUSION's licence text. Please cite the manuscript and MOFFUSION.
+MIT licence (`LICENSE`), incorporating MOFFUSION's（https://github.com/parkjunkil/MOFFUSION） licence text.
